@@ -1,0 +1,20 @@
+#!/usr/bin/python
+from i_qingcloud import *
+import i_qingcloud
+from i_qingcloud import RunInstance
+
+def test01_cmd_get_args():
+    args = ['-m', 'centos64x86a', '--instance_name', 'test', '-t', 'small_b', '-f', 'config']
+    RunInstance(args)
+
+def test02_url_signature():
+    pass
+
+def test03_send_runINstance_request():
+    args = ['-m', 'centos64x86a', '--instance_name', 'test', '-t', 'small_b', '-f', 'config']
+    cmd=RunInstance(args)
+    cmd.run()
+
+
+if __name__ == '__main__':
+    test03_send_runINstance_request()
