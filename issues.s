@@ -1,5 +1,9 @@
 Change Request 1
 >&---------bad request------
+
+bad request when sending http request. Here is the log of def _send_request(self, properties) in
+i_qingcloud.py, line 61.
+
 count 1
 signature_method HmacSHA256
 zone 'pek3a'
